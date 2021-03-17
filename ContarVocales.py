@@ -1,0 +1,21 @@
+archivo=open("ContarVocales.txt", "a")
+n=str(input("Ingrese una palabra: "))
+
+A=n.count("a")
+E=n.count("e")
+I=n.count("i")
+O=n.count("o")
+U=n.count("u")
+
+print("A= ", A)
+print("E= ", E)
+print("I= ", I)
+print("O= ", O)
+print("U= ", U)
+archivo.write ('A=% s' %A + ' ')
+archivo.write ('E=% s' %E + ' ')
+archivo.write ('I=% s' %I + ' ')
+archivo.write ('O=% s' %O + ' ')
+archivo.write ('U=% s' %U + '\n') 
+
+archivo.close ()
